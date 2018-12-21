@@ -1,0 +1,29 @@
+{
+  "name": "nodespline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "*",
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "mongoose": "*",
+    "multer": "*",
+    "nodemon": "*",
+    "googleapis": "^32.0.0",
+    "request-promise": "^4.2.2",
+    "gtoken": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://anikeshk@bitbucket.org/splineai/nodespline.git"
+  },
+  "author": "Anikesh Kamath",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/splineai/nodespline#readme"
+}

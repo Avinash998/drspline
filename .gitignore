@@ -1,0 +1,11 @@
+/angular-src
+/node_modules
+/playground
+/public
+/server/config
+/server/db
+/server/models
+/server/server-copy.js
+/server/routes
+package-lock.json
+package.txt
