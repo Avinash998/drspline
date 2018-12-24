@@ -6,7 +6,8 @@
 /server/db
 /server/models
 /server/server-copy.js
-/server/routes/fhir_gcp_route
+/server/routes/fhir_gcp_route/deleteReesourcesCalling.js
+/server/routes/fhir_gcp_route/deleteStoreCalling.js
 /server/routes/api.js
 /server/routes/app-copy.js
 /server/routes/datasets_route.js
