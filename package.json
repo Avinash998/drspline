@@ -14,7 +14,6 @@
     "express": "*",
     "mongoose": "*",
     "multer": "*",
-    "nodemon": "*",
     "googleapis": "^32.0.0",
     "request-promise": "^4.2.2",
     "gtoken": "^2.3.0"
