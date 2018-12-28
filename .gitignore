@@ -10,11 +10,9 @@
 /server/routes/fhir_gcp_route/deleteStoreCalling.js
 /server/routes/api.js
 /server/routes/app-copy.js
-/server/routes/datasets_route.js
 /server/routes/dialogflow.js
 /server/routes/fhir_resources.js
 /server/routes/fhir_stores.js
-/server/routes/fhirstores_route.js
 /server/routes/gridfs.txt
 /server/routes/image.js
 /server/routes/patients_route.js
