@@ -9,7 +9,7 @@ function getToken(serviceAccountJson){
   console.log('getToken function called');
 	return new Promise((resolve, reject) => {
 		const gtoken = new GoogleToken({
-		    keyFile: `./../../config/clinic-spline-managment-system.json`,
+        keyFile: process.env.GOOGLE_APPLICATION_CREDENTIALS || `./../../config/clinic-spline-managment-system.json`,
 		    scope: ['https://www.googleapis.com/auth/cloud-platform'], // or space-delimited string of scopes
 		  });
 

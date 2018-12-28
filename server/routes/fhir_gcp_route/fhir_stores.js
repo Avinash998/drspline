@@ -4,7 +4,7 @@ const {google} = require('googleapis');
 const creds = require('./../../config/credentials-route.json');
 
 function listFhirStores(client, projectId, cloudRegion, datasetId) {
-  console.log('listFhirStores function is called');
+  //console.log('listFhirStores function is called');
   const parentName = `projects/${projectId}/locations/${cloudRegion}/datasets/${datasetId}`;
 
   const request = {parent: parentName};
@@ -28,7 +28,7 @@ function createFhirStore(
   datasetId,
   fhirStoreId
 ) {
-  console.log('createFhirStore function is called');
+ // console.log('createFhirStore function is called');
   const parentName = `projects/${projectId}/locations/${cloudRegion}/datasets/${datasetId}`;
 
   const request = {parent: parentName, fhirStoreId: fhirStoreId};
@@ -50,7 +50,7 @@ function deleteFhirStore(
   datasetId,
   fhirStoreId
 ) {
-  console.log('deleteFhirStore function is called');
+ // console.log('deleteFhirStore function is called');
   const fhirStoreName = `projects/${projectId}/locations/${cloudRegion}/datasets/${datasetId}/fhirStores/${fhirStoreId}`;
 
   const request = {name: fhirStoreName};
@@ -66,7 +66,7 @@ function deleteFhirStore(
 }
 
 function getFhirStore(client, projectId, cloudRegion, datasetId, fhirStoreId) {
-  console.log('getFhirStore function is called');
+ // console.log('getFhirStore function is called');
   const fhirStoreName = `projects/${projectId}/locations/${cloudRegion}/datasets/${datasetId}/fhirStores/${fhirStoreId}`;
 
   const request = {name: fhirStoreName};
@@ -82,7 +82,7 @@ function getFhirStore(client, projectId, cloudRegion, datasetId, fhirStoreId) {
 }
 
 function getMetadata(client, projectId, cloudRegion, datasetId, fhirStoreId) {
-  console.log('getMetadata function is called');
+ // console.log('getMetadata function is called');
   const fhirStoreName = `projects/${projectId}/locations/${cloudRegion}/datasets/${datasetId}/fhirStores/${fhirStoreId}`;
 
   const request = {name: fhirStoreName};
@@ -101,7 +101,7 @@ function getMetadata(client, projectId, cloudRegion, datasetId, fhirStoreId) {
 
 
 function getClient(apiKey, serviceAccountJson) {
-  console.log('getClient function called');
+ // console.log('getClient function called');
   const API_VERSION = 'v1alpha';
   const DISCOVERY_API = 'https://healthcare.googleapis.com/$discovery/rest';
   return google.auth
@@ -123,7 +123,9 @@ function getClient(apiKey, serviceAccountJson) {
         // console.log('Errror Message');
         });
     });
+
 }
+
 
 module.exports = {
   getClient,
